@@ -241,36 +241,19 @@
         </header>
 
         <article class="publication-card">
-          <div class="publication-preview">
+          <figure class="publication-preview">
             <div class="publication-badge">ICFHR 2020 <span>Oral</span></div>
-            <div
-              class="srr-diagram"
-              role="img"
-              aria-label="SRR-GAN jointly transforms low-resolution text into a super-resolved image and a recognition result"
+            <img
+              class="publication-figure"
+              src="assets/srr-gan-domain-adaptation.png"
+              alt="SRR-GAN domain-adversarial training diagram with a recognizer and domain discriminator"
+              width="624"
+              height="386"
+              loading="lazy"
+              decoding="async"
             >
-              <div class="diagram-stage">
-                <span class="diagram-label">Low-resolution text</span>
-                <div class="text-sample is-low">SRR GAN</div>
-              </div>
-              <span class="diagram-arrow" aria-hidden="true">→</span>
-              <div class="model-node">
-                <strong>SRR-GAN</strong>
-                <span>Joint adversarial learning</span>
-              </div>
-              <span class="diagram-arrow" aria-hidden="true">→</span>
-              <div class="diagram-output">
-                <div class="diagram-stage">
-                  <span class="diagram-label">Super-resolution</span>
-                  <div class="text-sample is-high">SRR GAN</div>
-                </div>
-                <div class="recognition-output">
-                  <span>Recognition</span>
-                  <strong>SRR GAN</strong>
-                </div>
-              </div>
-            </div>
-            <p class="diagram-caption">Joint text super-resolution and recognition through adversarial learning</p>
-          </div>
+            <figcaption>Domain-adversarial feature alignment for low-resolution text recognition</figcaption>
+          </figure>
 
           <div class="publication-card-body">
             <h3>SRR-GAN: Super-Resolution based Recognition with GAN for Low-Resolved Text Images</h3>
