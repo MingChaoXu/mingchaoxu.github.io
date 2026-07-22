@@ -1,5 +1,4 @@
 const root = document.documentElement;
-document.body.classList.add("motion-ready");
 const languageButtons = document.querySelectorAll("[data-set-language]");
 const menuButton = document.querySelector(".menu-button");
 const primaryNavigation = document.querySelector(".primary-nav");
@@ -7,14 +6,14 @@ const navigationLinks = document.querySelectorAll('.primary-nav a[href^="#"]');
 
 const pageMetadata = {
   en: {
-    title: "Mingchao Xu — Applied AI Researcher & Engineer",
+    title: "Mingchao Xu — Applied AI Researcher",
     description:
-      "Mingchao Xu is an applied AI researcher and engineer working across multimodal large language models, autonomous-driving perception, and computer vision.",
+      "Mingchao Xu is an applied AI researcher and engineer working on multimodal language models, autonomous-driving perception, and computer vision.",
   },
   zh: {
-    title: "许铭潮 — AI 算法研究员与工程师",
+    title: "许铭潮 — 应用 AI 算法研究员",
     description:
-      "许铭潮专注于多模态大模型、自动驾驶感知与计算机视觉，推动 AI 算法在真实业务场景中落地。",
+      "许铭潮专注于多模态大模型、自动驾驶感知与计算机视觉，推动 AI 算法研究在真实业务中的落地。",
   },
 };
 
@@ -59,28 +58,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();
 });
 
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const revealItems = document.querySelectorAll(".reveal");
-
-if (reducedMotion || !("IntersectionObserver" in window)) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-} else {
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 },
-  );
-
-  revealItems.forEach((item) => revealObserver.observe(item));
-}
-
-const observedSections = document.querySelectorAll("#work, #experience, #research, #contact");
+const observedSections = document.querySelectorAll("#about, #news, #projects, #publications, #experience");
 
 if ("IntersectionObserver" in window) {
   const sectionObserver = new IntersectionObserver(
@@ -92,7 +70,7 @@ if ("IntersectionObserver" in window) {
         });
       });
     },
-    { rootMargin: "-30% 0px -60% 0px" },
+    { rootMargin: "-25% 0px -65% 0px" },
   );
 
   observedSections.forEach((section) => sectionObserver.observe(section));
