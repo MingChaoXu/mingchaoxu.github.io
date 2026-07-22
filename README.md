@@ -7,7 +7,7 @@ A bilingual, responsive academic homepage for [mingchaoxu.github.io](https://min
 - `index.html` — academic profile, news, selected projects, publication, experience, and education
 - `styles.css` — restrained academic layout with responsive desktop and mobile views
 - `script.js` — language switching, mobile navigation, and active section navigation
-- `assets/mingchao-xu.jpg` — profile photo reused from the previous public homepage
+- `assets/mingchao-xu.jpg` — current profile photo
 
 The site is plain HTML, CSS, and JavaScript. It requires no package installation or build step and can be deployed directly from the repository root with GitHub Pages.
 
