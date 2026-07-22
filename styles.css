@@ -400,7 +400,7 @@ button {
 }
 
 .publication-card {
-  width: min(100%, 880px);
+  width: min(100%, 720px);
   margin-inline: auto;
   overflow: hidden;
   border: 1px solid var(--line-dark);
@@ -419,7 +419,7 @@ button {
   position: relative;
   margin: 0;
   overflow: hidden;
-  padding: 58px 30px 19px;
+  padding: 54px 24px 16px;
   border-bottom: 1px solid var(--line);
   background: #f4f6f8;
 }
@@ -450,7 +450,7 @@ button {
 
 .publication-figure {
   display: block;
-  width: min(100%, 624px);
+  width: min(100%, 500px);
   height: auto;
   margin: 0 auto;
   border: 1px solid #d3d8dd;
@@ -460,7 +460,7 @@ button {
 }
 
 .publication-preview figcaption {
-  margin: 13px 0 0;
+  margin: 11px 0 0;
   color: var(--light-muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.72rem;
@@ -469,11 +469,11 @@ button {
 }
 
 .publication-card-body {
-  padding: 25px 30px 27px;
+  padding: 22px 25px 24px;
 }
 
 .publication-card-body h3 {
-  font-size: 1.32rem;
+  font-size: 1.2rem;
   line-height: 1.35;
 }
 
@@ -481,7 +481,7 @@ button {
 .publication-venue,
 .publication-keywords {
   margin: 10px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   line-height: 1.55;
 }
 
@@ -513,8 +513,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 13px 21px;
-  margin-top: 17px;
-  padding-top: 15px;
+  margin-top: 15px;
+  padding-top: 13px;
   border-top: 1px solid var(--line);
 }
 
@@ -792,7 +792,7 @@ button {
   }
 
   .publication-preview {
-    padding: 58px 12px 17px;
+    padding: 54px 12px 15px;
   }
 
   .publication-card-body {
