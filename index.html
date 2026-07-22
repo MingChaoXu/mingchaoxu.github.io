@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-language="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +22,7 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">
-      <span class="lang lang-en">Skip to content</span>
-      <span class="lang lang-zh">跳到主要内容</span>
-    </a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
       <div class="header-inner">
@@ -42,18 +39,12 @@
         </button>
 
         <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-          <a href="#about"><span class="lang lang-en">About</span><span class="lang lang-zh">简介</span></a>
-          <a href="#news"><span class="lang lang-en">News</span><span class="lang lang-zh">动态</span></a>
-          <a href="#projects"><span class="lang lang-en">Projects</span><span class="lang lang-zh">项目</span></a>
-          <a href="#publications"><span class="lang lang-en">Publications</span><span class="lang lang-zh">论文</span></a>
-          <a href="#experience"><span class="lang lang-en">Experience</span><span class="lang lang-zh">经历</span></a>
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
         </nav>
-
-        <div class="language-switch" role="group" aria-label="Language">
-          <button type="button" data-set-language="en" class="is-active" aria-pressed="true">EN</button>
-          <span aria-hidden="true">/</span>
-          <button type="button" data-set-language="zh" aria-pressed="false">中文</button>
-        </div>
       </div>
     </header>
 
@@ -68,44 +59,37 @@
             height="250"
           />
           <div class="profile-links" aria-label="Contact links">
-            <a href="mailto:xumingchao_2013@163.com">Email</a>
-            <a href="https://github.com/MingChaoXu" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://doi.org/10.1109/ICFHR2020.2020.00012" target="_blank" rel="noreferrer">DBLP / DOI</a>
+            <a class="profile-link" href="mailto:mingchao.xu.casia@gmail.com" aria-label="Email Mingchao Xu">
+              <img src="./assets/icons/mail.svg" alt="" aria-hidden="true" />
+              <span>Email</span>
+            </a>
+            <a class="profile-link" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=CR65p5YAAAAJ" target="_blank" rel="noreferrer" aria-label="Google Scholar profile">
+              <img src="./assets/icons/google-scholar.svg" alt="" aria-hidden="true" />
+              <span>Google Scholar</span>
+            </a>
+            <a class="profile-link" href="https://github.com/MingChaoXu" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+              <img src="./assets/icons/github.svg" alt="" aria-hidden="true" />
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
 
         <div class="profile-content">
-          <p class="affiliation">
-            <span class="lang lang-en">China Telecom · Suzhou, China</span>
-            <span class="lang lang-zh">中国电信 · 中国苏州</span>
-          </p>
-          <h1>Mingchao Xu <span class="chinese-name">许铭潮</span></h1>
-          <p class="title-line">
-            <span class="lang lang-en">Applied AI Researcher &amp; Engineer</span>
-            <span class="lang lang-zh">应用 AI 算法研究员与工程师</span>
-          </p>
+          <p class="affiliation">China Telecom · Suzhou, China</p>
+          <h1>Mingchao Xu</h1>
+          <p class="title-line">Applied AI Researcher &amp; Engineer</p>
 
           <div class="bio">
             <p>
-              <span class="lang lang-en">
-                I am an applied AI researcher and engineer at China Telecom in Suzhou. My work focuses on multimodal large language models and computer vision, with an emphasis on developing reliable systems for real-world applications.
-              </span>
-              <span class="lang lang-zh">
-                我目前在中国电信苏州公司从事应用 AI 研发，主要关注多模态大模型与计算机视觉，致力于将算法研究转化为可在真实业务环境中可靠运行的系统。
-              </span>
+              I am an applied AI researcher and engineer at China Telecom in Suzhou. My work focuses on multimodal large language models and computer vision, with an emphasis on developing reliable systems for real-world applications.
             </p>
             <p>
-              <span class="lang lang-en">
-                Previously, I worked on end-to-end autonomous-driving perception at Momenta, parking and BEV perception at HoloMatic, and map-change discovery at Alibaba Amap. I received my M.Eng. from the Institute of Automation, Chinese Academy of Sciences, and my B.Eng. from Harbin Institute of Technology.
-              </span>
-              <span class="lang lang-zh">
-                此前，我曾在 Momenta 从事端到端自动驾驶感知，在禾多科技从事泊车与 BEV 感知，并在阿里高德研发地图变化发现算法。我硕士毕业于中国科学院自动化研究所，本科毕业于哈尔滨工业大学。
-              </span>
+              Previously, I worked on end-to-end autonomous-driving perception at Momenta, parking and BEV perception at HoloMatic, and map-change discovery at Alibaba Amap. I received my M.Eng. from the Institute of Automation, Chinese Academy of Sciences, and my B.Eng. from Harbin Institute of Technology.
             </p>
           </div>
 
           <div class="research-interests">
-            <strong><span class="lang lang-en">Research interests:</span><span class="lang lang-zh">研究方向：</span></strong>
+            <strong>Research interests:</strong>
             <span>Multimodal LLMs</span>
             <span>Computer Vision</span>
             <span>Autonomous Driving</span>
@@ -116,47 +100,32 @@
 
       <section id="news" class="content-section">
         <header class="section-header">
-          <h2><span class="lang lang-en">News</span><span class="lang lang-zh">近期动态</span></h2>
+          <h2>News</h2>
         </header>
         <div class="news-list">
           <article class="news-item">
             <time datetime="2025-05">2025.05</time>
-            <p>
-              <span class="lang lang-en">Joined China Telecom Suzhou, focusing on enterprise AI R&amp;D, private deployment, and technical solution design.</span>
-              <span class="lang lang-zh">加入中国电信苏州公司，负责企业 AI 算法研发、私有化部署与技术解决方案设计。</span>
-            </p>
+            <p>Joined China Telecom Suzhou, focusing on enterprise AI R&amp;D, private deployment, and technical solution design.</p>
           </article>
           <article class="news-item">
             <time datetime="2025">2025</time>
-            <p>
-              <span class="lang lang-en">Deployed a Qwen3-based police-call classification and quality-inspection system covering 1,145 subclasses.</span>
-              <span class="lang lang-zh">完成基于 Qwen3 的警情分类与质检系统部署，覆盖 1145 个警情子类。</span>
-            </p>
+            <p>Deployed a Qwen3-based police-call classification and quality-inspection system covering 1,145 subclasses.</p>
           </article>
           <article class="news-item">
             <time datetime="2024">2024</time>
-            <p>
-              <span class="lang lang-en">Completed production work on end-to-end perception, AEB, and failsafe systems at Momenta.</span>
-              <span class="lang lang-zh">在 Momenta 完成端到端感知、AEB 与 Failsafe 系统的量产研发工作。</span>
-            </p>
+            <p>Completed production work on end-to-end perception, AEB, and failsafe systems at Momenta.</p>
           </article>
           <article class="news-item">
             <time datetime="2020">2020</time>
-            <p>
-              <span class="lang lang-en">SRR-GAN was presented as an oral paper at ICFHR 2020.</span>
-              <span class="lang lang-zh">SRR-GAN 入选 ICFHR 2020 Oral 论文。</span>
-            </p>
+            <p>SRR-GAN was presented as an oral paper at ICFHR 2020.</p>
           </article>
         </div>
       </section>
 
       <section id="projects" class="content-section">
         <header class="section-header">
-          <h2><span class="lang lang-en">Selected Projects</span><span class="lang lang-zh">代表性项目</span></h2>
-          <p>
-            <span class="lang lang-en">Research-driven systems deployed in public services, autonomous driving, and map intelligence.</span>
-            <span class="lang lang-zh">面向公共服务、自动驾驶与地图智能的研究及工程落地。</span>
-          </p>
+          <h2>Selected Projects</h2>
+          <p>Research-driven systems deployed in public services, autonomous driving, and map intelligence.</p>
         </header>
 
         <div class="project-list">
@@ -166,22 +135,14 @@
               <span>China Telecom</span>
             </div>
             <div class="project-body">
-              <h3>
-                <span class="lang lang-en">Police-call classification and quality inspection with LLMs</span>
-                <span class="lang lang-zh">警情分类大模型微调与要素质检系统</span>
-              </h3>
+              <h3>Police-call classification and quality inspection with LLMs</h3>
               <p>
-                <span class="lang lang-en">
-                  Fine-tuned and deployed Qwen3 7B/14B/32B models for a four-level taxonomy with 1,145 subclasses. Designed long-tail sampling, instruction templates, evaluation, and private-platform serving.
-                </span>
-                <span class="lang lang-zh">
-                  基于 Qwen3 7B/14B/32B 模型，面向 1145 个警情子类完成长尾采样、指令模板、模型评估与私有化部署。
-                </span>
+                Fine-tuned and deployed Qwen3 7B/14B/32B models for a four-level taxonomy with 1,145 subclasses. Designed long-tail sampling, instruction templates, evaluation, and private-platform serving.
               </p>
               <ul class="result-list">
-                <li><strong>97%+</strong> <span class="lang lang-en">overall accuracy</span><span class="lang lang-zh">全量准确率</span></li>
-                <li><strong>99.9%+</strong> <span class="lang lang-en">accuracy on critical classes</span><span class="lang lang-zh">关注类准确率</span></li>
-                <li><strong>&lt;0.5 s</strong> <span class="lang lang-en">inference per case</span><span class="lang lang-zh">单条推理耗时</span></li>
+                <li><strong>97%+</strong> overall accuracy</li>
+                <li><strong>99.9%+</strong> accuracy on critical classes</li>
+                <li><strong>&lt;0.5 s</strong> inference per case</li>
               </ul>
             </div>
           </article>
@@ -192,21 +153,13 @@
               <span>Momenta</span>
             </div>
             <div class="project-body">
-              <h3>
-                <span class="lang lang-en">End-to-end perception for cruise and AEB</span>
-                <span class="lang lang-zh">面向跟车巡航与 AEB 的端到端大模型感知</span>
-              </h3>
+              <h3>End-to-end perception for cruise and AEB</h3>
               <p>
-                <span class="lang lang-en">
-                  Migrated a two-stage DD3D system to a one-stage EBM architecture. Combined Transformer, BEV and perspective-view features with radar and egomotion for robust detection.
-                </span>
-                <span class="lang lang-zh">
-                  将两段式 DD3D 迁移至一段式 EBM 架构，融合 Transformer、BEV、透视视角、Radar 与 Egomotion 特征，提升检测鲁棒性。
-                </span>
+                Migrated a two-stage DD3D system to a one-stage EBM architecture. Combined Transformer, BEV and perspective-view features with radar and egomotion for robust detection.
               </p>
               <ul class="result-list">
                 <li><strong>67.3 → 68.8</strong> CPD</li>
-                <li><strong>92.1%</strong> <span class="lang lang-en">AEB success rate</span><span class="lang lang-zh">AEB 成功率</span></li>
+                <li><strong>92.1%</strong> AEB success rate</li>
               </ul>
             </div>
           </article>
@@ -217,22 +170,14 @@
               <span>Momenta</span>
             </div>
             <div class="project-body">
-              <h3>
-                <span class="lang lang-en">Failsafe perception under extreme conditions</span>
-                <span class="lang lang-zh">极端场景下的 Failsafe 视觉感知</span>
-              </h3>
+              <h3>Failsafe perception under extreme conditions</h3>
               <p>
-                <span class="lang lang-en">
-                  Improved visual risk detection under glare and occlusion. Fused local visual patches with planning trajectories, LiDAR, and radar to refine alarm triggering and degradation strategies.
-                </span>
-                <span class="lang lang-zh">
-                  针对炫光与遮挡场景优化视觉风险检测，结合局部特征、Planning 轨迹、LiDAR 与 Radar 改进报警触发和降级策略。
-                </span>
+                Improved visual risk detection under glare and occlusion. Fused local visual patches with planning trajectories, LiDAR, and radar to refine alarm triggering and degradation strategies.
               </p>
               <ul class="result-list">
                 <li><strong>77.7% → 82.7%</strong> recall @ precision ≥ 0.9</li>
                 <li><strong>51 → 6,000+</strong> CPI</li>
-                <li><strong>1 / 14,000 km</strong> <span class="lang lang-en">false-alarm frequency</span><span class="lang lang-zh">误报频率</span></li>
+                <li><strong>1 / 14,000 km</strong> false-alarm frequency</li>
               </ul>
             </div>
           </article>
@@ -243,20 +188,12 @@
               <span>Alibaba Amap</span>
             </div>
             <div class="project-body">
-              <h3>
-                <span class="lang lang-en">Lane and road-object change discovery</span>
-                <span class="lang lang-zh">车道线与道路目标变化发现</span>
-              </h3>
+              <h3>Lane and road-object change discovery</h3>
               <p>
-                <span class="lang lang-en">
-                  Developed change-detection systems using multi-frame image features, HD-map geometry, localization, matching, and temporal fusion for automated map updates.
-                </span>
-                <span class="lang lang-zh">
-                  利用多帧图像特征、HDMap 三维矢量、定位匹配与时序融合，研发并落地自动化地图变化发现系统。
-                </span>
+                Developed change-detection systems using multi-frame image features, HD-map geometry, localization, matching, and temporal fusion for automated map updates.
               </p>
               <ul class="result-list">
-                <li><strong>92%</strong> <span class="lang lang-en">recall at 2.5% FPR for lane changes</span><span class="lang lang-zh">车道线变化召回率 @ 2.5% FPR</span></li>
+                <li><strong>92%</strong> recall at 2.5% FPR for lane changes</li>
               </ul>
             </div>
           </article>
@@ -265,7 +202,7 @@
 
       <section id="publications" class="content-section">
         <header class="section-header">
-          <h2><span class="lang lang-en">Publications</span><span class="lang lang-zh">学术论文</span></h2>
+          <h2>Publications</h2>
         </header>
 
         <article class="publication-item">
@@ -279,8 +216,7 @@
             <p class="authors"><strong>Ming-Chao Xu</strong>, Fei Yin, Cheng-Lin Liu</p>
             <p class="venue">17th International Conference on Frontiers in Handwriting Recognition (ICFHR), 2020, pp. 1–6.</p>
             <p class="publication-summary">
-              <span class="lang lang-en">A unified adversarial framework for jointly learning text super-resolution and recognition on low-resolution scene and handwritten text.</span>
-              <span class="lang lang-zh">面向低分辨率场景文本与手写文本，提出联合学习文本超分辨率和识别的对抗训练框架。</span>
+              A unified adversarial framework for jointly learning text super-resolution and recognition on low-resolution scene and handwritten text.
             </p>
             <div class="paper-links">
               <a href="https://doi.org/10.1109/ICFHR2020.2020.00012" target="_blank" rel="noreferrer">DOI</a>
@@ -292,77 +228,77 @@
 
       <section id="experience" class="content-section">
         <header class="section-header">
-          <h2><span class="lang lang-en">Experience</span><span class="lang lang-zh">工作经历</span></h2>
+          <h2>Experience</h2>
         </header>
 
         <div class="experience-list">
           <article class="experience-item">
             <time>2025.05 — Present</time>
             <div>
-              <h3><span class="lang lang-en">China Telecom, Suzhou</span><span class="lang lang-zh">中国电信，苏州</span></h3>
-              <p><span class="lang lang-en">AI R&amp;D and Solution Engineering</span><span class="lang lang-zh">AI 算法研发与解决方案</span></p>
+              <h3>China Telecom, Suzhou</h3>
+              <p>AI R&amp;D and Solution Engineering</p>
             </div>
           </article>
           <article class="experience-item">
             <time>2024.04 — 2025.05</time>
-            <div><h3>Momenta</h3><p><span class="lang lang-en">Algorithm Researcher, DDOD Perception</span><span class="lang lang-zh">算法研究员，DDOD 感知</span></p></div>
+            <div><h3>Momenta</h3><p>Algorithm Researcher, DDOD Perception</p></div>
           </article>
           <article class="experience-item">
             <time>2023.02 — 2024.03</time>
-            <div><h3>HoloMatic</h3><p><span class="lang lang-en">Algorithm Researcher, Perception</span><span class="lang lang-zh">算法研究员，感知部门</span></p></div>
+            <div><h3>HoloMatic</h3><p>Algorithm Researcher, Perception</p></div>
           </article>
           <article class="experience-item">
             <time>2021.03 — 2023.02</time>
-            <div><h3>Alibaba · Amap</h3><p><span class="lang lang-en">Algorithm Researcher, Vision R&amp;D Center</span><span class="lang lang-zh">算法研究员，视觉研发中心</span></p></div>
+            <div><h3>Alibaba · Amap</h3><p>Algorithm Researcher, Vision R&amp;D Center</p></div>
           </article>
           <article class="experience-item">
             <time>2018 — 2020</time>
-            <div><h3>SenseTime</h3><p><span class="lang lang-en">Research Intern, Face Anti-Spoofing &amp; Industrial Vision</span><span class="lang lang-zh">算法研究实习生，人脸活体与工业视觉</span></p></div>
+            <div><h3>SenseTime</h3><p>Research Intern, Face Anti-Spoofing &amp; Industrial Vision</p></div>
           </article>
         </div>
       </section>
 
       <section class="content-section two-column-section">
         <div>
-          <header class="section-header compact"><h2><span class="lang lang-en">Education</span><span class="lang lang-zh">教育背景</span></h2></header>
+          <header class="section-header compact"><h2>Education</h2></header>
           <article class="education-item">
             <time>2017 — 2020</time>
-            <h3><span class="lang lang-en">University of Chinese Academy of Sciences</span><span class="lang lang-zh">中国科学院大学</span></h3>
-            <p><span class="lang lang-en">M.Eng., Computer Application Technology<br />Institute of Automation, CAS · Top 5%</span><span class="lang lang-zh">计算机应用技术硕士<br />中国科学院自动化研究所 · 专业前 5%</span></p>
+            <h3>University of Chinese Academy of Sciences</h3>
+            <p>M.Eng., Computer Application Technology<br />Institute of Automation, CAS · Top 5%</p>
           </article>
           <article class="education-item">
             <time>2013 — 2017</time>
-            <h3><span class="lang lang-en">Harbin Institute of Technology</span><span class="lang lang-zh">哈尔滨工业大学</span></h3>
-            <p><span class="lang lang-en">B.Eng., Automation<br />Honors School · Top 5%</span><span class="lang lang-zh">自动化本科<br />英才学院 · 专业前 5%</span></p>
+            <h3>Harbin Institute of Technology</h3>
+            <p>B.Eng., Automation<br />Honors School · Top 5%</p>
           </article>
         </div>
 
         <div>
-          <header class="section-header compact"><h2><span class="lang lang-en">Selected Honors</span><span class="lang lang-zh">部分荣誉</span></h2></header>
+          <header class="section-header compact"><h2>Selected Honors</h2></header>
           <ul class="honor-list">
-            <li><time>2018</time><span><span class="lang lang-en">Star Intern of the Year, SenseTime</span><span class="lang lang-zh">商汤科技年度明星实习生</span></span></li>
-            <li><time>2014–2016</time><span><span class="lang lang-en">National Encouragement Scholarship, Top 3%</span><span class="lang lang-zh">国家励志奖学金，前 3%</span></span></li>
-            <li><time>2014–2016</time><span><span class="lang lang-en">HIT Second-Class Scholarship, Top 10%</span><span class="lang lang-zh">哈尔滨工业大学二等奖学金，前 10%</span></span></li>
-            <li><time>2014</time><span><span class="lang lang-en">Second Prize, Provincial Mathematical Modeling Contest</span><span class="lang lang-zh">省级数学建模竞赛二等奖</span></span></li>
+            <li><time>2018</time><span>Star Intern of the Year, SenseTime</span></li>
+            <li><time>2014–2016</time><span>National Encouragement Scholarship, Top 3%</span></li>
+            <li><time>2014–2016</time><span>HIT Second-Class Scholarship, Top 10%</span></li>
+            <li><time>2014</time><span>Second Prize, Provincial Mathematical Modeling Contest</span></li>
           </ul>
         </div>
       </section>
 
       <section id="contact" class="contact-section">
-        <h2><span class="lang lang-en">Contact</span><span class="lang lang-zh">联系</span></h2>
-        <p>
-          <span class="lang lang-en">For research discussion or industry collaboration, please feel free to get in touch.</span>
-          <span class="lang lang-zh">如需交流研究问题或探讨行业合作，欢迎与我联系。</span>
-        </p>
-        <a href="mailto:xumingchao_2013@163.com">xumingchao_2013@163.com</a>
+        <h2>Contact</h2>
+        <p>For research discussion or industry collaboration, please feel free to get in touch.</p>
+        <a class="contact-email" href="mailto:mingchao.xu.casia@gmail.com">
+          <img src="./assets/icons/mail.svg" alt="" aria-hidden="true" />
+          <span>mingchao.xu.casia@gmail.com</span>
+        </a>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
         <span>© <span id="current-year"></span> Mingchao Xu</span>
-        <span><span class="lang lang-en">Last updated July 2026</span><span class="lang lang-zh">最后更新于 2026 年 7 月</span></span>
-        <a href="#about"><span class="lang lang-en">Back to top</span><span class="lang lang-zh">回到顶部</span></a>
+        <span>Last updated July 2026</span>
+        <a href="#about">Back to top</a>
       </div>
     </footer>
   </body>

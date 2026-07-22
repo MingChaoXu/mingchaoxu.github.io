@@ -1,13 +1,14 @@
 # Mingchao Xu — Personal Homepage
 
-A bilingual, responsive academic homepage for [mingchaoxu.github.io](https://mingchaoxu.github.io/).
+An English, responsive academic homepage for [mingchaoxu.github.io](https://mingchaoxu.github.io/).
 
 ## Structure
 
 - `index.html` — academic profile, news, selected projects, publication, experience, and education
 - `styles.css` — restrained academic layout with responsive desktop and mobile views
-- `script.js` — language switching, mobile navigation, and active section navigation
+- `script.js` — mobile navigation and active section navigation
 - `assets/mingchao-xu.jpg` — current profile photo
+- `assets/icons/` — local contact icons for email, Google Scholar, and GitHub
 
 The site is plain HTML, CSS, and JavaScript. It requires no package installation or build step and can be deployed directly from the repository root with GitHub Pages.
 
