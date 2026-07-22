@@ -316,8 +316,7 @@ button {
 .news-item time,
 .project-meta time,
 .experience-item time,
-.education-item time,
-.honor-list time {
+.education-item time {
   color: var(--light-muted);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.74rem;
@@ -499,15 +498,13 @@ button {
   font-size: 0.82rem;
 }
 
-.two-column-section {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 72px;
-}
-
 .section-header.compact {
   display: block;
   margin-bottom: 25px;
+}
+
+.education-list {
+  max-width: 680px;
 }
 
 .education-item {
@@ -530,21 +527,6 @@ button {
   margin: 5px 0 0;
   color: var(--muted);
   font-size: 0.8rem;
-}
-
-.honor-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.honor-list li {
-  display: grid;
-  grid-template-columns: 85px 1fr;
-  gap: 12px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.82rem;
 }
 
 .contact-section {
@@ -668,9 +650,6 @@ button {
     gap: 30px;
   }
 
-  .two-column-section {
-    gap: 42px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -772,11 +751,6 @@ button {
   .experience-item {
     grid-template-columns: 1fr;
     gap: 5px;
-  }
-
-  .two-column-section {
-    grid-template-columns: 1fr;
-    gap: 35px;
   }
 
   .footer-inner {
