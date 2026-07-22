@@ -240,22 +240,49 @@
           <h2>Publications</h2>
         </header>
 
-        <article class="publication-item">
-          <div class="venue-box">
-            <strong>ICFHR</strong>
-            <span>2020</span>
-            <em>ORAL</em>
+        <article class="publication-card">
+          <div class="publication-preview">
+            <div class="publication-badge">ICFHR 2020 <span>Oral</span></div>
+            <div
+              class="srr-diagram"
+              role="img"
+              aria-label="SRR-GAN jointly transforms low-resolution text into a super-resolved image and a recognition result"
+            >
+              <div class="diagram-stage">
+                <span class="diagram-label">Low-resolution text</span>
+                <div class="text-sample is-low">SRR GAN</div>
+              </div>
+              <span class="diagram-arrow" aria-hidden="true">→</span>
+              <div class="model-node">
+                <strong>SRR-GAN</strong>
+                <span>Joint adversarial learning</span>
+              </div>
+              <span class="diagram-arrow" aria-hidden="true">→</span>
+              <div class="diagram-output">
+                <div class="diagram-stage">
+                  <span class="diagram-label">Super-resolution</span>
+                  <div class="text-sample is-high">SRR GAN</div>
+                </div>
+                <div class="recognition-output">
+                  <span>Recognition</span>
+                  <strong>SRR GAN</strong>
+                </div>
+              </div>
+            </div>
+            <p class="diagram-caption">Joint text super-resolution and recognition through adversarial learning</p>
           </div>
-          <div class="publication-content">
+
+          <div class="publication-card-body">
             <h3>SRR-GAN: Super-Resolution based Recognition with GAN for Low-Resolved Text Images</h3>
-            <p class="authors"><strong>Ming-Chao Xu</strong>, Fei Yin, Cheng-Lin Liu</p>
-            <p class="venue">17th International Conference on Frontiers in Handwriting Recognition (ICFHR), 2020, pp. 1–6.</p>
-            <p class="publication-summary">
-              A unified adversarial framework for jointly learning text super-resolution and recognition on low-resolution scene and handwritten text.
+            <p class="authors">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=CR65p5YAAAAJ" target="_blank" rel="noreferrer"><strong>Ming-Chao Xu</strong></a>, Fei Yin, Cheng-Lin Liu
             </p>
-            <div class="paper-links">
-              <a href="https://doi.org/10.1109/ICFHR2020.2020.00012" target="_blank" rel="noreferrer">DOI</a>
-              <a href="https://dblp.org/rec/conf/icfhr/XuYL20" target="_blank" rel="noreferrer">DBLP</a>
+            <p class="publication-venue"><strong>ICFHR 2020</strong> · Oral Presentation · pp. 1–6</p>
+            <p class="publication-keywords"><strong>Keywords:</strong> Text Image Super-Resolution, Text Recognition, Generative Adversarial Learning</p>
+            <div class="paper-links" aria-label="Publication resources">
+              <a href="https://doi.org/10.1109/ICFHR2020.2020.00012" target="_blank" rel="noreferrer"><span aria-hidden="true">💻</span> Page</a>
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9257746" target="_blank" rel="noreferrer"><span aria-hidden="true">📄</span> Paper</a>
+              <a href="https://dblp.org/rec/conf/icfhr/XuYL20" target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span> DBLP</a>
             </div>
           </div>
         </article>
