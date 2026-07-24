@@ -321,6 +321,11 @@ button {
   font-size: 0.91rem;
 }
 
+.news-accent {
+  color: #b42318;
+  font-weight: 800;
+}
+
 .project-list {
   border-top: 1px solid var(--line);
 }
